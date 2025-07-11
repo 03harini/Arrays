@@ -37,7 +37,7 @@ function findMax(){
 function findMin(){
     getArray();
     let min=Math.min(...numbers);
-    displayResult("Maximum: "+min);
+    displayResult("Minimum: "+min);
 }
 function findSum(){
     getArray();

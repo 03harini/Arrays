@@ -1,115 +1,57 @@
-/* General Page Styling */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
-  text-align: center;
-  background-image: url("https://img.freepik.com/free-vector/digital-technology-background_23-2148897676.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+   background-image: url("https://img.freepik.com/free-vector/digital-technology-background_23-2148897676.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-/* Heading */
 h1 {
-  color: #ffffff;
-  margin-bottom: 20px;
-  text-shadow: 1px 1px 3px #000;
+    color: #2c3e50;
+    margin-bottom: 20px;
 }
 
-/* Inputs */
 input[type="text"],
 input[type="number"] {
-  padding: 10px;
-  width: 90%;
-  max-width: 400px;
-  margin: 10px auto;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
-  display: block;
+    padding: 10px;
+    width: 300px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
 }
 
-/* Button Container */
-.button-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin: 20px auto;
-  max-width: 800px;
+button {
+    height:50px;
+    width:100px;
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
 }
 
-/* Button Styles */
-.button-container button {
-  flex: 1 1 150px;
-  max-width: 200px;
-  padding: 10px;
-  font-size: 14px;
-  background-color: #3498db;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+button:hover {
+    background-color: #2980b9;
 }
 
-.button-container button:hover {
-  background-color: #2980b9;
-}
-
-/* Result Box */
 .result {
-  margin-top: 20px;
-  padding: 15px;
-  background-color: rgba(236, 240, 241, 0.95);
-  border-radius: 8px;
-  max-width: 90%;
-  word-wrap: break-word;
-  font-size: 16px;
-  color: #2c3e50;
-  text-align: left;
-  display: inline-block;
-}
-
-/* Responsive for Mobile Devices */
-@media (max-width: 600px) {
-  body {
-    padding: 10px;
-    height: auto; /* Ensure full content shows */
-    min-height: 100vh; /* Cover full screen */
-    overflow-x: hidden; /* Prevent horizontal scroll */
-  }
-
-  .button-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px; /* spacing between buttons */
-  }
-
-  .button-container button {
-    width: 90%;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    display: inline-block;
+    max-width: auto;
+    word-wrap: break-word;
     font-size: 16px;
-    padding: 12px 0; /* Adjust height */
-  }
-
-  h1 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-  }
-
-  input[type="text"],
-  input[type="number"] {
-    width: 90%;
-    font-size: 16px;
-    padding: 12px;
-  }
-
-  .result {
-    text-align: center;
-    font-size: 16px;
-    padding: 10px;
-    width: 90%;
-    margin: 0 auto;
-  }
+    color: #2c3e50;
+    text-align: left;
 }
